@@ -63,7 +63,7 @@ Abstract:
 //
 #define LSR_TXRDY 0x20
 #define LSR_RXDA  0x01
-#define DLAB      0x01
+#define DLAB      0x01U
 
 //
 // Globals for Serial Port settings
