@@ -124,7 +124,7 @@ OnigurumaMatch (
                  );
 
   if (OnigResult != ONIG_NORMAL) {
-    onig_error_code_to_str (ErrorMessage, OnigResult, &ErrorInfo);
+    onig_error_code_to_str ((OnigUChar *)ErrorMessage, OnigResult, &ErrorInfo);
     DEBUG ((DEBUG_ERROR, "Regex compilation failed: %a\n", ErrorMessage));
     return EFI_DEVICE_ERROR;
   }
@@ -153,7 +153,7 @@ OnigurumaMatch (
   } else {
     *Result = FALSE;
     if (OnigResult != ONIG_MISMATCH) {
-      onig_error_code_to_str (ErrorMessage, OnigResult);
+      onig_error_code_to_str ((OnigUChar *)ErrorMessage, OnigResult);
       DEBUG ((DEBUG_ERROR, "Regex match failed: %a\n", ErrorMessage));
       onig_region_free (Region, 1);
       onig_free (OnigRegex);
