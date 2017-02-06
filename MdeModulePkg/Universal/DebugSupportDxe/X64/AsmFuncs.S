@@ -275,7 +275,7 @@ ExtraPushDone:
                 pushq   %rax
                 # CS from application is one entry back in application stack
                 movq    ASM_PFX(AppRsp)(%rip), %rax
-                movzxw  8(%rax), %rax
+                movzwq  8(%rax), %rax
                 pushq   %rax
 
                 mov     %ds, %rax
