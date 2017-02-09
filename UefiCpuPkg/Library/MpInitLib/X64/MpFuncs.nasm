@@ -23,7 +23,7 @@ extern ASM_PFX(InitializeFloatingPointUnits)
 
 DEFAULT REL
 
-SECTION .text
+SECTION .data
 
 ;-------------------------------------------------------------------------------------
 ;RendezvousFunnelProc  procedure follows. All APs execute their procedure. This
