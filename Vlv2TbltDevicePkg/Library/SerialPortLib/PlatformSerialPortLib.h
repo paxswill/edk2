@@ -54,7 +54,7 @@
 //
 #define LSR_TXRDY 0x20
 #define LSR_RXDA  0x01
-#define DLAB      0x01
+#define DLAB      0x01U
 
 #define UART_DATA    8
 #define UART_STOP    1
