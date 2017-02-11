@@ -38,7 +38,7 @@
 //---------------------------------------------
 #define LSR_TXRDY               0x20
 #define LSR_RXDA                0x01
-#define DLAB                    0x01
+#define DLAB                    0x01U
 #define MCR_DTRC                0x01
 #define MCR_RTS                 0x02
 #define MSR_CTS                 0x10
